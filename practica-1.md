@@ -3,7 +3,7 @@
 ## Datos Personales  
 Nací en 2003, actualmente tengo 21 años y estudio Desarrollo de Software Interactivo y Videojuegos en AMERIKE. Me apasiona la música, los videojuegos (últimamente juego más *The Rogue Prince of Persia*), y disfruto pasar tiempo con mi perro y mi hurona. En su momento, también practiqué música, tocando guitarra acústica, teclado, violín y batería.  
 
-![Antonio](/Practica1/IMG/Antonio.jpeg)  
+![Antonio](/IMG/Antonio.jpg)  
 
 ## ¿Por qué AMERIKE?  
 Desde que tuve la oportunidad de jugar videojuegos, siempre me quedaba con la idea de: *"Sería increíble que también se pudiera hacer esto"*. Motivado por mi deseo de modificar contenido en juegos, fui aprendiendo poco a poco sobre la creación completa de un videojuego. Descubrí aspectos que no imaginaba que debían desarrollarse antes de poder disfrutar una experiencia de juego. Desde la parte teórica, donde se analiza qué hace que un juego sea divertido, hasta la parte más técnica, que implica programar movimiento, enemigos, inteligencia artificial, creación de niveles, etc.  
@@ -23,7 +23,7 @@ También juego muchos videojuegos, pero tengo la costumbre de analizar constante
 - [Itch.io](https://jern-armen.itch.io)  
 - [WhatsApp](wa.me/5511984237)  
 
-![Wasa](/Practica1/IMG/Wasa.jpeg)  
+![Wasa](/IMG/Wasa.jpg)  
 
 
 - [Regresar Inicio](/README.md)
