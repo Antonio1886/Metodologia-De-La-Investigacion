@@ -5,11 +5,12 @@
 
 Es un software o servicio que permite gestionar, implementar y administrar recursos de computación, almacenamiento, redes y otros servicios en un entorno de nube. Estas herramientas facilitan la creación y el manejo de infraestructuras de TI sin necesidad de hardware físico, lo que permite a las empresas escalar, optimizar costos y mejorar la eficiencia.
 
+![Azure](/IMG/Azure.png)  
 ### Azure como herramienta para la nube 
 
 Azure es una plataforma de computación en la nube creada por Microsoft. Ofrece una amplia gama de servicios en la nube, como almacenamiento, procesamiento, redes, inteligencia artificial, bases de datos, desarrollo de aplicaciones y mucho más. Azure permite a las empresas y desarrolladores crear, implementar y gestionar aplicaciones y servicios a través de centros de datos distribuidos en todo el mundo.
 
-siendo ellos los encargados principalmente de ofrecer maquinas virtuales con mucha facilidad, siendo uno de los puntos principales el probar aplicaciones o vulnerabilidades en sistemas operativos, creando ambientes para probar hasta donde un virus puede ser capaz de modificar datos y reforzar esa brecha que se uso 
+siendo ellos **los encargados principalmente de ofrecer maquinas virtuales con mucha facilidad**, siendo uno de los puntos principales el probar aplicaciones o vulnerabilidades en sistemas operativos, creando ambientes para probar hasta donde un virus puede ser capaz de modificar datos y reforzar esa brecha que se uso 
 
 ## Los usos mas Populares en Azure 
 
@@ -52,5 +53,5 @@ Backup y recuperación ante desastres: Soluciones como Azure Backup y Azure Site
 
 ## conclusion
 
-En resumen, Azure es una plataforma de nube completa que permite a las empresas y desarrolladores innovar, escalar y gestionar sus recursos de manera eficiente, sin la necesidad de invertir en infraestructura física.
+En resumen, **Azure es una plataforma de nube completa que permite a las empresas y desarrolladores innovar, escalar y gestionar sus recursos de manera eficiente**, sin la necesidad de invertir en infraestructura física.
 
