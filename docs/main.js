@@ -1,1 +1,1 @@
- alert ("El Virus Se Cago Exitosamente :D");
+ //alert ("El Virus Se Cago Exitosamente :D");

@@ -21,7 +21,7 @@ También juego muchos videojuegos, pero tengo la costumbre de analizar constante
 ## Redes  
 - [Instagram](https://www.instagram.com/antonioperez7348?igsh=MWR6bzV3NWt4MDMybQ==)  
 - [Itch.io](https://jern-armen.itch.io)  
-- [WhatsApp](wa.me/5511984237)  
+- [WhatsApp](wa.me/5531198427)  
 
 ![Wasa](/IMG/Wasa.jpg)  
 
