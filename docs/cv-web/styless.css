@@ -1,97 +1,146 @@
-/* Estilos generales */
+/* 1. Tamaño de letra */
+html {
+    font-size: 100%;
+}
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* 2. Box-sizing */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
 }
 
-/* Encabezado */
-header {
-    background: #333;
+/* 3. Fuente de Google Fonts */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* 4. Colores de letra y fondo */
+body {
+    color: #333;
+    background-color: #001d17a7;
+}
+
+/* 5. Color de los enlaces */
+a {
+    color: #002853;
+    text-decoration: none;
+}
+
+/* 6. Hover en enlaces */
+a:hover {
+    color: #9e0000;
+}
+
+/* 7. Imagen responsiva */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* 8. Variables CSS */
+:root {
+    --primary-color: #ff5733;
+    --secondary-color: #33c3ff;
+    --font-size-lg: 1.5rem;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: var(--font-size-lg);
+    text-align: center;
+    margin-top: 1rem;
+}
+
+p {
+    color: var(--secondary-color);
+    line-height: 1.6;
+}
+
+/* 9. Selectores de identificador */
+#header {
+    background-color: var(--primary-color);
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    text-align: center;
+}
+
+#main-content {
+    padding: 2rem;
+}
+
+#footer {
+    background-color: var(--secondary-color);
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 1rem;
+    margin-top: 2rem;
 }
 
-/* Navegación */
-nav {
-    background: #444;
-    padding: 10px;
-    text-align: center;
-}
-
-
-
-/* Contenedores */
-.container {
-    width: 80%;
-    margin: 20px auto;
+/* 10. Selectores de clase */
+.card {
+    border: 1px solid #ffffff;
+    padding: 1rem;
+    border-radius: 5px;
     background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 1rem auto;
+    max-width: 600px;
 }
 
-/* Botón */
 .btn {
     display: inline-block;
-    margin-top: 10px;
-    padding: 10px 15px;
-    background: #333;
+    padding: 0.5rem 1rem;
+    background: var(--primary-color);
     color: white;
-    text-decoration: none;
     border-radius: 5px;
+    text-align: center;
 }
 
-.btn:hover {
-    background: #555;
+.text-center {
+    text-align: center;
 }
 
-/* Tabla */
-table {
+/* 11. Selectores descendientes */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+article p {
+    line-height: 1.6;
+    padding: 1rem;
+}
+
+/* 12. Selectores de grupo */
+h1, h2, h3 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+}*/
+
+button, .btn {
+    cursor: pointer;
+    border: none;
+    padding: 0.5rem 1rem;
+    display: block;
+    margin: 1rem auto;
+}
+
+input, textarea {
     width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-}
-
-table th, table td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
-}
-
-table th {
-    background: #444;
-    color: white;
-}
-
-/* Pie de página */
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-}
-/* Contenedor para centrar la imagen */
-.img-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-}
-/* Estilo para centrar el título */
-.title {
-    text-align: center;
-}
-nav a {
-    color: rgb(0, 255, 60);
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: red;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    display: block;
+    margin: 1rem auto;
 }
