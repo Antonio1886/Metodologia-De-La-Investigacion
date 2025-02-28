@@ -1,0 +1,112 @@
+:root {
+    --font-size: 1rem;
+    --font-family: "Roboto", serif;
+    --color-cadetblue: rgb(14, 2, 88);
+  }
+  
+  html {
+    font-size: 100%;
+  }
+  
+  body {
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    color: var(--color-cadetblue);
+    font-style: normal;
+    background-color: rgb(117, 117, 117);
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3 {
+    text-align: center;
+  }
+  
+  nav {
+    background-color: rgb(26, 11, 135);
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  nav a:hover {
+    color: rgb(5, 133, 103);
+  }
+  
+  a {
+    color: rgb(201, 202, 215);
+  }
+  
+  a:hover {
+    color: blueviolet;
+  }
+  
+  table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+  }
+  
+  .img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .grid-proyectos,
+    .grid-nav {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .grid-proyectos,
+    .grid-nav {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .grid-nav {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+  
+  * {
+    box-sizing: border-box;
+  }

@@ -1,0 +1,289 @@
+:root{
+    --font-size: 1rem;
+    --font-family: "Roboto", serif;
+    --color-cadetblue: rgb(95, 158, 160)
+  }
+  
+  html {
+    font-size: 100%; 
+  }
+  
+  body {
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    color: var(--color-cadetblue);
+    font-style: normal;
+    background-color:antiquewhite;
+  }
+  
+  a{
+    color:brown;
+  }
+  
+  a:hover {
+    color: blueviolet;
+  }
+  
+  table{
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+  
+  img{
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+  }
+  
+  #nombre{
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  #Inicio, #Acerca, #Habilidades, #Proyectos, #Contacto{
+    font-family: "Sigmar", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  #proyectos{
+    font-family: "Permanent Marker", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .text-center{
+    text-align: center;
+  }
+  
+  .bg-black{
+    background-color: black;
+  }
+  
+  .text-bold{
+    font-weight: bold;
+  }
+  
+  .Proyects h2{
+    color: aquamarine;
+  }
+  
+  .Proyects summary:first-child{
+    color: red;
+  }
+  
+  .Proyects summary:last-child{
+    color: blueviolet;
+  }
+  
+  .Proyects summary:last-child{
+    color: brown;
+  }
+  
+  .card-proyectos,
+  .card-nav{
+    border: 3px solid navy;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .container{
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /*
+  MediaQueries
+    Mobile 768px
+    Tablet 1024px
+    Desktop 1200px
+  */
+  
+  @media screen and (min-width: 768px) {
+    .grid-proyectos,
+    .grid-nav{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-columns: repeat(2,50%);
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .grid-proyectos,
+    .grid-nav{
+      display: grid;
+      /*grid-template-columns: 33% 34% 33%;*/
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .grid-nav{
+      display: grid;
+      /*grid-template-columns: 33% 34% 33%;*/
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+  
+  
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+
+
+
+
+
+
+
+  /* 1. Tamaño de letra */
+html {
+    font-size: 100%;
+}
+body {
+    font-size: 1rem;
+}
+
+/* 2. Box-sizing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 3. Fuente de Google Fonts */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* 4. Colores de letra y fondo */
+body {
+    color: #333;
+    background-color: #001d17a7;
+}
+
+/* 5. Color de los enlaces */
+a {
+    color: #002853;
+    text-decoration: none;
+}
+
+/* 6. Hover en enlaces */
+a:hover {
+    color: #9e0000;
+}
+
+/* 7. Imagen responsiva */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* 8. Variables CSS */
+:root {
+    --primary-color: #ff5733;
+    --secondary-color: #33c3ff;
+    --font-size-lg: 1.5rem;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: var(--font-size-lg);
+    text-align: center;
+    margin-top: 1rem;
+}
+
+p {
+    color: var(--secondary-color);
+    line-height: 1.6;
+}
+
+/* 9. Selectores de identificador */
+#header {
+    background-color: var(--primary-color);
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    text-align: center;
+}
+
+#main-content {
+    padding: 2rem;
+}
+
+#footer {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* 10. Selectores de clase */
+.card {
+    border: 1px solid #ffffff;
+    padding: 1rem;
+    border-radius: 5px;
+    background: white;
+    margin: 1rem auto;
+    max-width: 600px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* 11. Selectores descendientes */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+article p {
+    line-height: 1.6;
+    padding: 1rem;
+}
+
+/* 12. Selectores de grupo */
+h1, h2, h3 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+}*/
+
+button, .btn {
+    cursor: pointer;
+    border: none;
+    padding: 0.5rem 1rem;
+    display: block;
+    margin: 1rem auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    display: block;
+    margin: 1rem auto;
+}
