@@ -7,3 +7,4 @@
 - [Práctica 5](https://antonio1886.github.io/Metodologia-De-La-Investigacion/cv-webv2/index.html)
 - [Práctica 6](https://antonio1886.github.io/Metodologia-De-La-Investigacion/practica-6/)
 - [Práctica 7](https://antonio1886.github.io/Metodologia-De-La-Investigacion/practica-7/)
+- [Práctica 8](https://antonio1886.github.io/Metodologia-De-La-Investigacion/practica-8/)
