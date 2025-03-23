@@ -3,65 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulador de Tienda en Línea</title>
+    <title>Simulador de Tienda en Línea - Registro</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="container">
-        <!-- Encabezado de la tienda -->
         <header>
-            <h1>Tona Store</h1>
+            <h1>Mi Tienda en Línea</h1>
             <nav>
                 <ul>
-                    <li><a href="#productos">Productos</a></li>
-                    <li><a href="#carrito">Carrito</a></li>
-                    <li><a href="#registro-section">Registro</a></li>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Carrito</a></li>
+                    <li><a href="#" class="active">Registro</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
-            <!-- Sección de productos -->
-            <section id="productos">
-                <h2>Productos</h2>
-                <div class="productos-container">
-                    <article class="producto" data-id="1" data-nombre="Camiseta" data-precio="15">
-                        Camiseta - $15
-                    </article>
-                    <article class="producto" data-id="2" data-nombre="Pantalones" data-precio="25">
-                        Pantalones - $25
-                    </article>
-                    <article class="producto" data-id="3" data-nombre="Zapatos" data-precio="50">
-                        Zapatos - $50
-                    </article>
-                    <article class="producto" data-id="4" data-nombre="Sombrero" data-precio="10">
-                        Sombrero - $10
-                    </article>
-                </div>
-            </section>
-            
-            <!-- Mensaje de procesando compra -->
-            <div id="mensaje-procesando" class="hidden">
-                <p>Procesando compra...</p>
-                <div class="loader"></div>
-            </div>
-            
-            <!-- Mensaje de compra exitosa -->
-            <section id="mensaje-compra" class="hidden">
-                <h2>¡Compra realizada con éxito!</h2>
-                <p>Gracias por su compra.</p>
-            </section>
-            
-            <!-- Carrito de compras -->
-            <section id="carrito" class="carrito">
-                <h2>Carrito de Compras</h2>
-                <ul id="lista-carrito"></ul>
-                <p>Total: $<span id="total-carrito">0</span></p>
-                <button id="btn-compra">Comprar</button>
-            </section>
-            
-            <!-- Sección de registro (nueva) -->
-            <section id="registro-section" class="registro-section">
+            <section class="registro-section">
                 <h2>Registro de Usuario</h2>
                 <form id="registro-form">
                     <div class="form-group">
@@ -91,7 +51,7 @@
                     <button type="submit" class="btn-submit">Registrarse</button>
                 </form>
 
-                <div class="loader-registro" id="loader-registro">
+                <div class="loader" id="loader">
                     <div class="spinner"></div>
                     <p>Procesando registro...</p>
                 </div>
@@ -99,12 +59,15 @@
                 <div class="success-message" id="success-message">
                     <h3>¡Registro Exitoso!</h3>
                     <p>Tu cuenta ha sido creada correctamente.</p>
+                    <button type="button" class="btn-submit" onclick="window.location.href='https://antonio1886.github.io/Metodologia-De-La-Investigacion/practica-7/'">
+                        Entrar
+                    </button>
                 </div>
             </section>
         </main>
 
         <footer>
-            <p>&copy; 2025 Simulador de Tienda en Línea. Todos los derechos reservados.</p>
+            <p>&copy; 2025 Mi Tienda en Línea. Todos los derechos reservados.</p>
         </footer>
     </div>
 
