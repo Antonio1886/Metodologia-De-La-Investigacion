@@ -9,33 +9,24 @@ const $loader = d.querySelector("#loader");
 
 // Función para cargar los productos desde la Fake Store API
 function cargarProductos() {
-  // Mostrar el loader mientras se cargan los productos
   $loader.classList.remove("hidden");
-  
-  // Hacer la petición AJAX a la API
+
   fetch('https://fakestoreapi.com/products')
     .then(response => {
-      if (!response.ok) {
-        throw new Error('Error en la respuesta de la API');
-      }
+      if (!response.ok) throw new Error('Error en la respuesta de la API');
       return response.json();
     })
     .then(productos => {
-      // Ocultar el loader una vez que tenemos los datos
       $loader.classList.add("hidden");
-      
-      // Limpiar el contenedor de productos
       $productosContainer.innerHTML = '<h2>Productos</h2>';
-      
-      // Recorrer los productos y agregarlos al DOM
+
       productos.forEach(producto => {
         const $producto = d.createElement("article");
         $producto.className = "producto";
         $producto.setAttribute("data-id", producto.id);
         $producto.setAttribute("data-nombre", producto.title);
         $producto.setAttribute("data-precio", producto.price);
-        
-        // Crear la estructura del producto
+
         $producto.innerHTML = `
           <img src="${producto.image}" alt="${producto.title}">
           <h3>${producto.title}</h3>
@@ -43,7 +34,7 @@ function cargarProductos() {
           <p class="categoria">${producto.category}</p>
           <button class="btn-agregar">Agregar al carrito</button>
         `;
-        
+
         $productosContainer.appendChild($producto);
       });
     })
@@ -54,50 +45,48 @@ function cargarProductos() {
     });
 }
 
-// Cargar los productos cuando se carga la página
+// Cargar productos al iniciar la página
 d.addEventListener("DOMContentLoaded", cargarProductos);
 
-$btnCompra.addEventListener("click", function (e) {
+$btnCompra.addEventListener("click", function () {
   if ($listaCarrito.children.length > 0) {
-      // Mostrar el mensaje de espera y el loader
-      $mensajeCompra.classList.remove("hidden");
+    // Mostrar mensaje de "Procesando compra..."
+    $mensajeCompra.innerHTML = `<p>Procesando compra...</p><div class="loader"></div>`;
+    $mensajeCompra.classList.remove("hidden");
 
-      // Simular la compra durante 5 segundos
-      setTimeout(function () {
-          // Ocultar el mensaje de espera y el loader
-          $mensajeCompra.classList.add("hidden");
+    setTimeout(() => {
+      // Cambiar el mensaje a "Compra exitosa"
+      $mensajeCompra.innerHTML = `<p>¡Compra exitosa!</p>`;
 
-          // Limpiar el carrito
-          $listaCarrito.innerHTML = "";
-          $totalCarrito.textContent = "0";
+      // Limpiar el carrito después de la compra
+      $listaCarrito.innerHTML = "";
+      $totalCarrito.textContent = "0";
 
-          // Mostrar un mensaje de compra exitosa
-          alert("Compra realizada con éxito");
-      }, 5000); // 5000 milisegundos = 5 segundos
+      // Ocultar el mensaje después de 2 segundos
+      setTimeout(() => {
+        $mensajeCompra.classList.add("hidden");
+      }, 2000);
+    }, 3000); // 3 segundos de procesamiento antes de mostrar "Compra exitosa"
   } else {
-      alert("El carrito está vacío");
+    alert("El carrito está vacío");
   }
 });
 
 d.addEventListener("click", function (e) {
-  // Agregar producto al carrito (modificado para el nuevo diseño)
   if (e.target.matches(".btn-agregar")) {
     const $producto = e.target.closest(".producto");
     let nombre = $producto.getAttribute("data-nombre");
     let precio = parseFloat($producto.getAttribute("data-precio"));
 
-    // Verificar si el producto ya está en el carrito
-    let $itemExistente = Array.from($listaCarrito.children).find(item => {
-      return item.querySelector(".nombre-producto").textContent === nombre;
-    });
+    let $itemExistente = Array.from($listaCarrito.children).find(item =>
+      item.querySelector(".nombre-producto").textContent === nombre
+    );
 
     if ($itemExistente) {
-      // Si el producto ya está en el carrito, incrementar la cantidad
       let $cantidad = $itemExistente.querySelector(".cantidad");
       let cantidad = parseInt($cantidad.textContent);
       $cantidad.textContent = cantidad + 1;
     } else {
-      // Si el producto no está en el carrito, agregarlo
       const $itemCarrito = d.createElement("li");
       $itemCarrito.innerHTML = `
         <span class="nombre-producto">${nombre}</span> - $<span class="precio-producto">${precio.toFixed(2)}</span>
@@ -108,35 +97,25 @@ d.addEventListener("click", function (e) {
       $listaCarrito.appendChild($itemCarrito);
     }
 
-    // Actualizar el total del carrito
     actualizarTotalCarrito();
   }
 
-  // Manejar clics en los botones de "+" y "-"
   if (e.target.matches(".btn-mas") || e.target.matches(".btn-menos")) {
     const $itemCarrito = e.target.closest("li");
     const $cantidad = $itemCarrito.querySelector(".cantidad");
-    const $precio = $itemCarrito.querySelector(".precio-producto");
     let cantidad = parseInt($cantidad.textContent);
-    let precio = parseFloat($precio.textContent);
 
     if (e.target.matches(".btn-mas")) {
-      // Incrementar la cantidad
       cantidad++;
     } else if (e.target.matches(".btn-menos")) {
-      // Decrementar la cantidad (pero no menos de 0)
       if (cantidad > 1) {
         cantidad--;
       } else {
-        // Si la cantidad es 1, eliminar el producto del carrito
         $itemCarrito.remove();
       }
     }
 
-    // Actualizar la cantidad en el carrito
     $cantidad.textContent = cantidad;
-
-    // Actualizar el total del carrito
     actualizarTotalCarrito();
   }
 });

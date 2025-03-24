@@ -4,8 +4,22 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     text-align: center;
-  }
-  
+}
+
+.success-message {
+   display: none;
+   background-color: #e8f5e9;
+   border: 1px solid #a5d6a7;
+   padding: 20px;
+   border-radius: 4px;
+   text-align: center;
+   margin-top: 20px;
+}
+
+.success-message h3 {
+   color: #2e7d32;
+   margin-bottom: 10px;
+}
   .container {
     text-align: center;
     padding: 20px 0;
@@ -206,18 +220,4 @@ body {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
-  
-  .success-message {
-    display: none;
-    background-color: #e8f5e9;
-    border: 1px solid #a5d6a7;
-    padding: 20px;
-    border-radius: 4px;
-    text-align: center;
-    margin-top: 20px;
-}
 
-.success-message h3 {
-    color: #2e7d32;
-    margin-bottom: 10px;
-}
