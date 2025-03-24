@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tona Store</title>
+    <link rel="stylesheet" href="./styless.css" />
+  </head>
+  <body>
+    <div class="container">
+        <header>
+            <h1>Tona Store</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Carrito</a></li>
+                    <li><a href="https://antonio1886.github.io/Metodologia-De-La-Investigacion/practica-8/" class="active">Registro</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    
+    <!-- Reemplazamos la sección de productos estática por una dinámica -->
+    <section id="productos-container">
+      <h2>Productos</h2>
+      <!-- Aquí se cargarán dinámicamente los productos desde la API -->
+    </section>
+    
+    <!-- Loader para mostrar mientras se cargan los productos -->
+    <div id="loader" class="loader-container">
+      <div class="loader"></div>
+      <p>Cargando productos...</p>
+    </div>
+    
+    <div id="mensaje-compra" class="hidden">
+      <p>Procesando compra...</p>
+      <div class="loader"></div>
+    </div>
+    
+    
+    <section id="carrito" class="carrito">
+      <h2>Carrito de Compras</h2>
+      <ul id="lista-carrito"></ul>
+      <p>Total: $<span id="total-carrito">0</span></p>
+      <button id="btn-compra">Comprar</button>
+    </section>
+
+    
+    <script src="./main.js"></script>
+  </body>
+  
+  <footer>
+    <p>Sitio hecho por @Antonio1886 &copy; 2025</p>
+  </footer>
+</html>
