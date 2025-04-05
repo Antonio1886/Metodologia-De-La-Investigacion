@@ -9,6 +9,6 @@
 - [Práctica 7](https://antonio1886.github.io/Metodologia-De-La-Investigacion/practica-7/)
 - [Práctica 8](https://antonio1886.github.io/Metodologia-De-La-Investigacion/practica-8/)
 - [Práctica 9](https://antonio1886.github.io/Metodologia-De-La-Investigacion/practica-9/)
-- [Práctica 10](https://antonio1886.github.io/Metodologia-De-La-Investigacion/practica-9/)
+- [Práctica 10](/Practica10/Tienda-Online.md)
 - [Práctica 11](https://antonio1886.github.io/Metodologia-De-La-Investigacion/practica-9/)
 - [Práctica 12](https://antonio1886.github.io/Metodologia-De-La-Investigacion/practica-9/)
