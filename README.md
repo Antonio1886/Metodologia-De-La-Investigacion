@@ -10,5 +10,5 @@
 - [Práctica 8](https://antonio1886.github.io/Metodologia-De-La-Investigacion/practica-8/)
 - [Práctica 9](https://antonio1886.github.io/Metodologia-De-La-Investigacion/practica-9/)
 - [Práctica 10](/Practica10/Tienda-Online.md)
-- [Práctica 11](https://antonio1886.github.io/Metodologia-De-La-Investigacion/practica-9/)
-- [Práctica 12](https://antonio1886.github.io/Metodologia-De-La-Investigacion/practica-9/)
+- [Práctica 11](/Practica10/Tienda-Online.md)
+- [Práctica 12 (proximamente )]()
