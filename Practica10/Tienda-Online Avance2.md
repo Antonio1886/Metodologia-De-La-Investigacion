@@ -60,3 +60,7 @@
 
 
 ![Modelo Racional](/Practica10/assets/Screenshot%202025-04-17%20185709.png)
+
+## Supabase
+
+![Supabase](/Practica10/assets/Supabase.png)
