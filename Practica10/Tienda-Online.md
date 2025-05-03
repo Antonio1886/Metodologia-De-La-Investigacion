@@ -47,7 +47,7 @@ GameHub es una tienda online especializada en la venta de videojuegos digitales 
    - Recomendaciones basadas en compra
 
 ## f. Diagrama de flujo
-![Diagrama de flujo GameHub](/Practica10/assets/Diagrama%20en%20blanco.png)
+![Diagrama de flujo GameHub](/Practica10/assets/diagrama%20de%20flujo.png)
 
 
 
